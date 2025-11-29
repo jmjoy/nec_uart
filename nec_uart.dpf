@@ -1,0 +1,40 @@
+---
+# Note: The contents of this file are automatically generated.
+# Any changes made by hand may be overwritten.
+version: '0.2'
+work_dir: .
+design_root_dir: .
+simulations:
+  - name: tb_uart_tx
+    options: '-top work.tb_uart_tx +acc+b -waves waves.mxd'
+  - name: tb_bcd_display
+    options: '-top work.tb_bcd_display +acc+b -waves waves.mxd'
+  - name: tb_nec_uart
+    options: '-top work.tb_nec_uart +acc+b -waves waves.mxd'
+  - name: tb_nec
+    options: '-top work.tb_nec +acc+b -waves waves.mxd'
+source_files:
+  - language: verilog
+    path: src/g.sv
+  - language: verilog
+    path: src/tb_uart_tx.sv
+  - language: verilog
+    path: src/uart_tx.sv
+  - language: verilog
+    path: src/tb_bcd_display.sv
+  - language: verilog
+    path: src/bcd_display.sv
+  - language: verilog
+    path: src/tb_nec_uart.sv
+  - language: verilog
+    path: src/top_nec_uart.sv
+  - language: verilog
+    path: src/bin2bcd.sv
+  - language: verilog
+    path: src/tb_nec.sv
+  - language: verilog
+    path: src/nec.sv
+  - language: verilog
+    path: src/nec_bcd.sv
+library_search_paths:
+  - $STD_LIBS/ieee93

@@ -1,0 +1,20 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW2A-18C" pn="GW2A-LV18PG256C8/I7">gw2a18c-011</Device>
+    <FileList>
+        <File path="src/bcd_display.sv" type="file.verilog" enable="1"/>
+        <File path="src/bin2bcd.sv" type="file.verilog" enable="1"/>
+        <File path="src/g.sv" type="file.verilog" enable="1"/>
+        <File path="src/nec.sv" type="file.verilog" enable="1"/>
+        <File path="src/nec_bcd.sv" type="file.verilog" enable="1"/>
+        <File path="src/syncer.sv" type="file.verilog" enable="1"/>
+        <File path="src/top_nec_uart.sv" type="file.verilog" enable="1"/>
+        <File path="src/uart_tx.sv" type="file.verilog" enable="1"/>
+        <File path="src/nec_uart.cst" type="file.cst" enable="1"/>
+        <File path="src/nec_uart.sdc" type="file.sdc" enable="1"/>
+        <File path="src/nec_uart.rao" type="file.gao" enable="1"/>
+    </FileList>
+</Project>

@@ -1,0 +1,7 @@
+/dsim_work
+/impl
+/dsim.*
+/dvlcom.*
+/*.db
+/*.mxd
+/*.vcd
